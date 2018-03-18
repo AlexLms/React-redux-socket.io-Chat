@@ -14,9 +14,9 @@ export const SendField = styled.div`
   margin-left: 60px;
   /* max-height: 80px; */
   width: 100%;
-  textarea {
+  min-height: 53px;
+  input {
     height: 100%;
-    resize: none;
     outline: none;
     font-family: 'catamaran-regular';
     font-size: 14px;

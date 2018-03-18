@@ -49,6 +49,7 @@ export const MessageText = styled.div`
   margin-top: 5px;
   max-width: 500px;
   line-height: 17px;
+  word-wrap: break-word;
   &:not(:first-child) {
     border-top-left-radius: 25px;
   }

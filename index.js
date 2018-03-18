@@ -5,10 +5,6 @@ const io = require('socket.io')(server);
 const port = process.env.PORT || 5001;
 const fs = require('fs');
 
-server.listen(port, () => {
-  console.log(`Server listening at port1 ${port}`);
-});
-
 app.use(express.static(`${__dirname  }/public`));
 
 app.get('/', (req, res) => {
@@ -28,4 +24,8 @@ io.on('connection', socket => {
   socket.on('disconnect', () => {
     console.log('a user disconnected');
   });
+});
+
+server.listen(port, () => {
+  console.log(`Server listening at port1 ${port}`);
 });

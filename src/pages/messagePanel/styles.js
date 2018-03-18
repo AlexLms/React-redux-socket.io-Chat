@@ -16,6 +16,7 @@ export const MessagePanelBody = styled.div`
     height: -moz-calc(100% - 26px);
     height: calc(100% - 26px);
     height: calc(100% - 26px);
+    overflow-y: scroll;
   }
 `;
 export const MessageTyping = styled.div`
