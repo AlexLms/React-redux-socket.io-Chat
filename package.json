@@ -6,20 +6,29 @@
   "main": "index.jsx",
   "scripts": {
     "watch": "webpack --watch",
-    "dev": "webpack-dev-server",
-    "prod": "cross-env NODE_ENV=production webpack -p "
+    "client": "webpack-dev-server",
+    "server": "nodemon index.js",
+    "prod": "cross-env NODE_ENV=production webpack -p ",
+    "start": "concurrently \"yarn client\" \"yarn server\" "
   },
   "dependencies": {
     "babel-eslint": "^8.2.1",
+    "concurrently": "^3.5.1",
+    "express": "^4.16.3",
+    "flow": "^0.2.3",
+    "nodemon": "^1.17.2",
     "react": "^16.1.1",
     "react-dom": "^16.1.1",
     "react-icons": "^2.2.7",
+    "react-motion": "^0.5.2",
     "react-redux": "^5.0.7",
-    "redux": "^3.7.2",
     "react-responsive-modal": "^2.0.1",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
     "react-tabs": "^2.2.1",
+    "redux": "^3.7.2",
+    "socket.io": "^2.0.4",
+    "socket.io-client": "^2.0.4",
     "styled-components": "^3.1.6"
   },
   "devDependencies": {
@@ -47,7 +56,9 @@
     "extract-text-webpack-plugin": "^3.0.2",
     "favicons-webpack-plugin": "0.0.7",
     "file-loader": "^1.1.5",
+    "flow-bin": "^0.63.1",
     "html-webpack-plugin": "^2.30.1",
+    "node-sass": "^4.7.2",
     "react-fontawesome": "^1.6.1",
     "style-loader": "^0.19.0",
     "webpack": "^3.9.1",

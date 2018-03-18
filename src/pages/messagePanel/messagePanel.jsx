@@ -4,7 +4,7 @@ import { MessagesPanel, MessagePanelBody, MessageTyping } from './styles.js';
 // components
 import PanelHead from './components/messagePanelHead/panelHead';
 import MessageContent from './components/messageContent/messageContent';
-import MessageSend from './components/messageSend/messageSend';
+import MessageSendConnect from './components/messageSend/messageSend';
 
 // redux
 import { connect } from 'react-redux';
@@ -17,6 +17,7 @@ const mapStateToProps = (state) => ({
 
   modal5: state.toggleModal.modal5,
   modal6: state.toggleModal.modal6,
+  chatMessages: state.chat.messages,
 });
 
 class MessagePanel extends React.Component {
@@ -41,14 +42,14 @@ class MessagePanel extends React.Component {
         <MessagePanelBody>
           <div className="historyMessagesGroup">
             {
-              this.props.chatMessage.map(user =>
+              this.props.chatMessages.map(user =>
                 (<MessageContent
-                  userName={user.name}
-                  userMessage={user.message}
-                  userSeen={user.seen}
-                  userImg={user.img}
-                  userStatus={user.onlineStatus}
-                  isAdmin={user.isAdmin}
+                  userName={user.author}
+                  userMessage={user.text}
+                  // userSeen={user.seen}
+                  // userImg={user.img}
+                  // userStatus={user.onlineStatus}
+                  // isAdmin={user.isAdmin}
                 />))
             }
           </div>
@@ -59,7 +60,7 @@ class MessagePanel extends React.Component {
             <span>are typing</span>
           </MessageTyping>
         </MessagePanelBody>
-        <MessageSend />
+        <MessageSendConnect />
       </MessagesPanel>
     );
   }

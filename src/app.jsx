@@ -8,6 +8,7 @@ import { showUserSettings, toggleActive, showChatSettings } from './actions/acti
 // components
 import DialogsPanel from '~/pages/dialogsPanel/dialogsPanel';
 import MessagePanelWrap from '~/pages/MessagePanel/MessagePanel';
+import EnterPopup from '~/pages/chat/enterPopup';
 
 // styles
 import '~/styles/index.js';
@@ -25,7 +26,9 @@ const PageWrap = styled.div`
 const mapStateToProps = (state) => ({
   userSettings: state.ui.userSettings,
   chatSettings: state.ui.chatSettings,
+  isPopupOn: state.chat.isPopupOn,
 });
+
 
 class App extends React.Component {
   hideSettings = () => {
@@ -43,6 +46,7 @@ class App extends React.Component {
   render() {
     return (
       <PageWrap onClick={this.hideSettings}>
+        {this.props.isPopupOn ? <EnterPopup /> : null}
         <ContentWrap>
           <DialogsPanel inputRef={(input) => { this.inputElement = input; }} />
           <MessagePanelWrap handleFocus={this.handleFocus} />
@@ -52,6 +56,8 @@ class App extends React.Component {
   }
 }
 
-const MainApp = connect(mapStateToProps, { showUserSettings, toggleActive, showChatSettings })(App);
+const MainApp = connect(mapStateToProps, {
+  showUserSettings, toggleActive, showChatSettings,
+})(App);
 
 export default MainApp;

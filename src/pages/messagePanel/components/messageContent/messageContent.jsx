@@ -8,14 +8,14 @@ const MessageContent = (props) => (
     <div className="messageWrap">
       <MessageContentWrap>
         <MessageChatPhoto>
-          <img src={props.userImg} alt="" />
-          <UserChatStatus onlineStatus={props.userStatus} />
+          {/* <img src={props.userImg} alt="" /> */}
+          {/* <UserChatStatus onlineStatus={props.userStatus} /> */}
         </MessageChatPhoto>
         <MessageBody>
           <MessageAuthorWrap>
             <MessageAuthor>{props.userName}</MessageAuthor>
-            <MessageDateText>{props.userSeen}</MessageDateText>
-            <MessageAuthorAdmin admin={props.isAdmin}>admin</MessageAuthorAdmin>
+            {/* <MessageDateText>{props.userSeen}</MessageDateText> */}
+            {/* <MessageAuthorAdmin admin={props.isAdmin}>admin</MessageAuthorAdmin> */}
           </MessageAuthorWrap>
           <div className="historyMessage">
             <div className="messageTextWrap">

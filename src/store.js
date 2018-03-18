@@ -28,6 +28,11 @@ const defaultState = {
     chatSettings: false,
     burgerActive: false,
   },
+  chat: {
+    messages: [],
+    author: 'guest',
+    isPopupOn: true,
+  },
 };
 
 const store = createStore(

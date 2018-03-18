@@ -5,12 +5,19 @@ import { Provider } from 'react-redux';
 import store from './store';
 import MainApp from './app';
 
+import io from 'socket.io-client';
+import { sendMessage } from './actions/actionCreators';
+const socket = io('http://localhost:5001');
+
+socket.on('chat message', (message) => {
+  store.dispatch(sendMessage(message.author, message.text));
+});
+
 const Main = (
   <Provider store={store}>
     <MainApp />
   </Provider>
 );
-
 
 ReactDOM.render(Main, document.getElementById('root'));
 
