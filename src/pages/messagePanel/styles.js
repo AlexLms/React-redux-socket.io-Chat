@@ -16,12 +16,19 @@ export const MessagePanelBody = styled.div`
     height: -moz-calc(100% - 26px);
     height: calc(100% - 26px);
     height: calc(100% - 26px);
-    overflow-y: scroll;
   }
 `;
+const isTyping = typing => {
+  if (typing === 'typing') {
+    return 'block';
+  } else if (typing === 'notTyping') {
+    return 'none';
+  }
+};
 export const MessageTyping = styled.div`
   margin-left: 60px;
   padding-bottom: 10px;
+  display: ${(props) => isTyping(props.typing)};
   span {
     font-family: 'catamaran-regular';
     font-size: 12px;

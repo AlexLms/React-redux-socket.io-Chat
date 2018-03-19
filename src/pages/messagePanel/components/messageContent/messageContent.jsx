@@ -1,4 +1,5 @@
 import React from 'react';
+import AnonImg from '~/files/img/no-img.png';
 
 import { MessageContentWrap, MessageChatPhoto, UserChatStatus, MessageBody, MessageAuthorWrap, MessageAuthor, MessageDateText, MessageAuthorAdmin, MessageText, HistoryMessageWrap } from './styles.js';
 import ServiceMessage from './../serviceMessage/serviceMessage';
@@ -8,7 +9,7 @@ const MessageContent = (props) => (
     <div className="messageWrap">
       <MessageContentWrap>
         <MessageChatPhoto>
-          {/* <img src={props.userImg} alt="" /> */}
+          <img src={AnonImg} alt="" />
           {/* <UserChatStatus onlineStatus={props.userStatus} /> */}
         </MessageChatPhoto>
         <MessageBody>

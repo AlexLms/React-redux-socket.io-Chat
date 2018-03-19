@@ -3,8 +3,8 @@ import rootReducer from './reducers/index';
 
 // our data
 import chatPanel from '~/data/chatPanel';
-import chatMessage from '~/data/chatMessage';
-import currentUserData from '~/data/currentUser';
+// import chatMessage from '~/data/chatMessage';
+// import currentUserData from '~/data/currentUser';
 import messages from '~/data/newMessages';
 import newMessagesStatus from '~/data/newMessagesStatus';
 
@@ -19,8 +19,8 @@ const defaultState = {
   },
   ui: {
     chatPanel,
-    currentUserData,
-    chatMessage,
+    // currentUserData,
+    // chatMessage,
     messages,
     newMessagesStatus,
     notify: true,

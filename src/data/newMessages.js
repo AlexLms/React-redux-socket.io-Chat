@@ -1,7 +1,7 @@
 const messages = [
   {
     name: 'Sheldhur Mornor',
-    text: 'hey Alex! Can we talk about last thing we wetr chat about',
+    text: 'hey! Can we talk about last thing we wetr chat about',
     seen: 'just now',
     img: 'https://users-ovtuzvuqxy.now.sh/notdog.jpg',
     onlineStatus: 'waiting',
@@ -9,7 +9,7 @@ const messages = [
   },
   {
     name: 'aaaaaaaaaaa',
-    text: 'hey Alex! Can we talk about last thing we wetr chat about',
+    text: 'hey! Can we talk about last thing we wetr chat about',
     seen: '5 min',
     img: 'https://users-ovtuzvuqxy.now.sh/dog.jpg',
     onlineStatus: 'offline',
@@ -17,7 +17,7 @@ const messages = [
   },
   {
     name: 'Maks',
-    text: 'hey Alex! Can we talk about last thing we wetr chat about',
+    text: 'hey! Can we talk about last thing we wetr chat about',
     seen: '1 hour',
     img: 'https://users-ovtuzvuqxy.now.sh/user2.jpg',
     onlineStatus: 'online',

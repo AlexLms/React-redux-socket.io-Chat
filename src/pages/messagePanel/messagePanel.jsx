@@ -1,5 +1,6 @@
 import React from 'react';
 import { MessagesPanel, MessagePanelBody, MessageTyping } from './styles.js';
+import { Scrollbars } from 'react-custom-scrollbars';
 
 // components
 import PanelHead from './components/messagePanelHead/panelHead';
@@ -40,25 +41,27 @@ class MessagePanel extends React.Component {
           modal6={this.props.modal6}
         />
         <MessagePanelBody>
-          <div className="historyMessagesGroup">
-            {
-              this.props.chatMessages.map(user =>
-                (<MessageContent
-                  userName={user.author}
-                  userMessage={user.text}
-                  // userSeen={user.seen}
-                  // userImg={user.img}
-                  // userStatus={user.onlineStatus}
-                  // isAdmin={user.isAdmin}
-                />))
-            }
-          </div>
-          <MessageTyping >
-            <span>Josefine</span>
-            <span>and</span>
-            <span>Kevin</span>
-            <span>are typing</span>
-          </MessageTyping>
+          <Scrollbars autoHide>
+            <div className="historyMessagesGroup">
+              {
+                this.props.chatMessages.map(user =>
+                  (<MessageContent
+                    userName={user.author}
+                    userMessage={user.text}
+                    // userSeen={user.seen}
+                    // userImg={user.img}
+                    // userStatus={user.onlineStatus}
+                    // isAdmin={user.isAdmin}
+                  />))
+              }
+            </div>
+            <MessageTyping typing="notTyping">
+              <span>Josefine</span>
+              <span>and</span>
+              <span>Kevin</span>
+              <span>are typing</span>
+            </MessageTyping>
+          </Scrollbars>
         </MessagePanelBody>
         <MessageSendConnect />
       </MessagesPanel>

@@ -29,6 +29,7 @@ export const UserPhoto = styled.div`
   height: 45px;
   position: relative;
   img {
+    position: relative;
     width: 45px;
     height: 45px;
     border-radius: 50%;
@@ -38,6 +39,18 @@ export const UserPhoto = styled.div`
 export const UserProfile = styled.div`
   display: flex;
   align-items: center;
+  ${UserPhoto} {
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 4px;
+      width: 43px;
+      height: 44px;
+      border-radius: 50%;
+      background-color: #fff;
+    }
+  }
 `;
 export const ProfileDescription = styled.div`
   font-size: 14px;
