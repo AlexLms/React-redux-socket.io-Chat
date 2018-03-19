@@ -9,7 +9,7 @@
     "client": "webpack-dev-server",
     "server": "nodemon index.js",
     "prod": "cross-env NODE_ENV=production webpack -p ",
-    "start": "concurrently \"yarn client\" \"yarn server\" "
+    "start": "concurrently \"npm run client\" \"npm run server\" "
   },
   "dependencies": {
     "concurrently": "^3.5.1",
