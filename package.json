@@ -8,7 +8,8 @@
     "watch": "webpack --watch",
     "client": "webpack-dev-server",
     "server": "nodemon index.js",
-    "prod": "cross-env NODE_ENV=production webpack -p ",
+    "dev": "cross-env NODE_ENV=development webpack",
+    "prod": "cross-env NODE_ENV=production webpack -p",
     "start": "concurrently \"npm run client\" \"npm run server\" "
   },
   "dependencies": {
