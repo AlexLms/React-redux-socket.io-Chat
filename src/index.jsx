@@ -7,7 +7,7 @@ import MainApp from './app';
 
 import io from 'socket.io-client';
 import { sendMessage } from './actions/actionCreators';
-const socket = io('http://localhost:5001');
+const socket = io();
 
 socket.on('chat message', (message) => {
   store.dispatch(sendMessage(message.author, message.text));
