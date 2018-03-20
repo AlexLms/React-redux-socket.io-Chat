@@ -7,10 +7,10 @@
   "scripts": {
     "watch": "webpack --watch",
     "client": "webpack-dev-server",
-    "server": "nodemon index.js",
+    "server": "node index.js",
     "dev": "cross-env NODE_ENV=development webpack",
     "prod": "cross-env NODE_ENV=production webpack -p",
-    "start": "concurrently \"npm run client\" \"npm run server\" "
+    "start": "npm run server"
   },
   "dependencies": {
     "concurrently": "^3.5.1",
