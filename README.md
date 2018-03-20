@@ -8,11 +8,15 @@ This is my PET Chat project that I'd like to share with you.
 
 2) Install dependencies via npm `npm i` or yarn `yarn install`.
 
-3) Start your web server `yarn start` || `npm run start`.
+3) Build ui application `npm run dev || prod`.
 
-4) Open 2 Browser tabs and enter 2 different nicknames.
+4) Start web server `npm run server`.
 
-5) Type anything in a chat.
+4.1) For fast start use `npm run start`
+
+5) Open 2 Browser tabs and enter 2 different nicknames. Navigate to [http://localhost:5001](http://localhost:5001)
+
+6) Type anything in a chat.
 
 # Location of stuff
 
