@@ -2,7 +2,7 @@
 
 This is my PET Chat project that I'd like to share with you.
 
-- [Webpack 4, babel 7, styled-components, redux, redux-thunk, socket.io]
+##### [Webpack 4, babel 7, styled-components, redux, redux-thunk, socket.io]
 
 
 # Installation
