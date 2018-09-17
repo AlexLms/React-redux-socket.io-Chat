@@ -2,7 +2,7 @@
 
 This is my PET Chat project that I'd like to share with you.
 
-# [Webpack 4, babel 7, styled-components, redux, redux-thunk, socket.io]
+# [Webpack 4, babel 7, styled-comp., redux, redux-thunk, socket.io]
 
 
 # Installation
@@ -23,7 +23,9 @@ This is my PET Chat project that I'd like to share with you.
 - My [actions](https://github.com/AlexLasagna/React-redux-socket.io-Chat/tree/master/src/actions)
 - My [reducers](https://github.com/AlexLasagna/React-redux-socket.io-Chat/tree/master/src/reducers)
 - My [base styles](https://github.com/AlexLasagna/React-redux-socket.io-Chat/tree/master/src/styles)
-- My [components](https://github.com/AlexLasagna/React-redux-socket.io-Chat/tree/master/src/pages)
+- My [components](https://github.com/AlexLasagna/React-redux-socket.io-Chat/tree/master/src/components)
+- My [REST](https://github.com/AlexLasagna/React-redux-socket.io-Chat/tree/master/src/api)
+- My [fonts, imgs](https://github.com/AlexLasagna/React-redux-socket.io-Chat/tree/master/src/static)
 
 # Build production
 
