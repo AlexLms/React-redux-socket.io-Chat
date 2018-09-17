@@ -1,3 +1,2 @@
-import '~/styles/base/reset';
-import '~/styles/base/fonts';
-import '~/styles/base/popup.styles.css';
+import 'src/styles/base/reset';
+import 'src/styles/base/fonts';

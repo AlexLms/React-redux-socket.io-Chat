@@ -1,11 +1,11 @@
 import { combineReducers } from 'redux';
 
-import ui from './toggleBoolean';
-import toggleModal from './toggleModal';
+import dialogs from './dialogs';
 import chat from './chat';
+import user from './user';
 
 const rootReducer = combineReducers({
-  ui, toggleModal, chat,
+  dialogs, chat, user,
 });
 
 export default rootReducer;

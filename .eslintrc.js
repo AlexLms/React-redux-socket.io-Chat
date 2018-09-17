@@ -14,9 +14,6 @@ module.exports = {
     node: true,
     browser: true
   },
-  settings: {
-    "import/resolver": "babel-plugin-root-import"
-  },
   parser: 'babel-eslint',
   parserOptions: {
     ecmaVersion: 8,
@@ -77,6 +74,7 @@ module.exports = {
     'react/jsx-boolean-value': 0,
     'react/prop-types': 0,
     'react/jsx-no-bind': 1,
+    'react/jsx-one-expression-per-line': 0,
     'react/no-unused-prop-types': 0,
     'react/sort-comp': [2, {
       order: [
@@ -89,12 +87,5 @@ module.exports = {
     'jsx-a11y/no-static-element-interactions': 0,
     'jsx-a11y/img-has-alt': 0,
     'jsx-a11y/href-no-hash': 0,
-    "jsx-a11y/label-has-for": [ 2, {
-      "components": [ "Label" ],
-      "required": {
-          "every": [ "nesting", "id" ]
-      },
-      "allowChildren": false
-    }]
   }
 }
