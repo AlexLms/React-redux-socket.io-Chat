@@ -1,4 +1,4 @@
-# ~ React-redux socket.io Chat ~
+# React-redux socket.io Chat
 
 This is my PET Chat project that I'd like to share with you.
 
