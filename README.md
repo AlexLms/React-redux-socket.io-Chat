@@ -2,31 +2,43 @@
 
 This is my PET Chat project that I'd like to share with you.
 
-### [Webpack 4, babel 7, styled-components, redux, redux-thunk, socket.io]
+Included `Webpack 4` `babel 7` `styled-components` `redux` `redux-thunk` `socket.io`
 
 
 # Installation
 
-1) Open your console and type:
+0) Clone the branch you need
 
-2) Install dependencies via npm `npm i` or yarn `yarn install`.
+1) Install dependencies via npm `npm i` or yarn `yarn install`.
 
-3) Start web server `npm run server`.
+2) Start web server `npm run server`.
 
-4) Open 2 Browser tabs and enter 2 different nicknames. Navigate to [http://localhost:5001](http://localhost:5001)
+3) Open 2 Browser tabs and enter 2 different nicknames. Navigate to [http://localhost:5001](http://localhost:5001)
 
-6) Type anything in a chat.
+4) Type anything in a chat.
 
 # Location of stuff
 
-- My [webpack config](https://github.com/AlexLasagna/React-redux-socket.io-Chat/tree/master/webpack).
-- My [actions](https://github.com/AlexLasagna/React-redux-socket.io-Chat/tree/master/src/actions)
-- My [reducers](https://github.com/AlexLasagna/React-redux-socket.io-Chat/tree/master/src/reducers)
-- My [base styles](https://github.com/AlexLasagna/React-redux-socket.io-Chat/tree/master/src/styles)
-- My [components](https://github.com/AlexLasagna/React-redux-socket.io-Chat/tree/master/src/components)
-- My [REST](https://github.com/AlexLasagna/React-redux-socket.io-Chat/tree/master/src/api)
-- My [fonts, imgs](https://github.com/AlexLasagna/React-redux-socket.io-Chat/tree/master/src/static)
+    .
+    ├── server/                 # Server logic with socket.io
+    ├── src/                    # App folder with all developer stuff
+    │   ├── actions/            # Redux actions used api/ functions
+    │   ├── api/                # Axios requests logic
+    │   ├── components/         # All components used in this project
+    │   ├── constants/          # Redux constants used in actions/
+    │   ├── pages/              # The layout of home page
+    │   ├── reducers/           # Redux reducers
+    │   ├── store/              # Redux store with initial state
+    │   ├── static/             # Used to store fonts, icons, images
+    │   └── ...
+    ├── webpack/                # Modules for webpack I used
+    ├── webpack.config.js       # All webpack settings
+    └── ...
 
 # Build production
 
-If you want to build a production version of my app you need to type `npm run build` || `yarn build` in a console. This will create dist folder where everything will be compressed and minified.
+If you want to build a production version of my app you need to type
+
+`npm run build` || `yarn build`
+
+This will create dist folder where everything will be compressed and minified.
