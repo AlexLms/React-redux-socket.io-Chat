@@ -11,9 +11,11 @@ Included `Webpack 4` `babel 7` `styled-components` `redux` `redux-thunk` `socket
 
 1) Install dependencies via npm `npm i` or yarn `yarn install`.
 
-2) Start web server `npm run server`.
+2) npm run build
 
-3) Open 2 Browser tabs and enter 2 different nicknames. Navigate to [http://localhost:5001](http://localhost:5001)
+3) Start web server `npm run server`.
+
+4) Open 2 Browser tabs and enter 2 different nicknames. Navigate to [http://localhost:5001](http://localhost:5001)
 
 4) Type anything in a chat.
 
